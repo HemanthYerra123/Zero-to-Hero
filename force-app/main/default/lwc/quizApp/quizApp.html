@@ -42,6 +42,9 @@
     <template if:true={isSubmitted}>
       <div class={isScoredFull}>You have Scored {correctAnswers} out of {myQuestions.length}</div>
     </template>
+    <template if:false={isSubmitted}>
+      <div>Please Submit exam to view results</div>
+    </template>
     </div>
     </lightning-card>
 </template>
